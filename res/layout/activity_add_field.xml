@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".AddFieldActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvfield"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="FIELDS OF YOUR FORM"
+         />
+
+    <ListView
+        android:id="@+id/Field_view"
+        android:layout_width="367dp"
+        android:layout_height="331dp"
+        android:padding="12dp"
+        android:background="@drawable/rec_bg"
+        android:layout_below="@+id/tvfield"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnaddfield"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Field_view"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/round_bg"
+        android:drawableStart="@drawable/ic_create_new_form"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:text="Add Fields"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Field_view"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_border"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:padding="16dp"
+        android:text="Next"
+        android:textColor="@color/colorAccentDark"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

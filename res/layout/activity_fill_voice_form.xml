@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:text="Please Enter the fields!!"
+        android:textStyle="bold"
+        android:layout_marginLeft="13dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="casual"/>
+    <EditText
+        android:id="@+id/etsearchform"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rec_bg"
+        android:hint="  Enter Form Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp" />
+
+
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:hint="  User Name"
+        android:inputType="textPersonName"
+        android:background="@drawable/rec_bg"
+        />
+
+    <Button
+        android:id="@+id/btnsearchform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/round_border"
+        android:fontFamily="casual"
+        android:text="Search form"
+        android:textColor="@color/colorAccentDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+</LinearLayout>

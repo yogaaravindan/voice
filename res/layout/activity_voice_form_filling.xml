@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical"
+    tools:context=".VoiceFormFillingActivity">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"/>
+
+
+
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/rec_bg"
+        android:layout_below="@+id/textView4"
+         />
+
+    <ImageView
+        android:id="@+id/micicon"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/data"
+        android:layout_marginLeft="225dp"
+
+        app:srcCompat="@drawable/mic" />
+
+    <ImageView
+        android:id="@+id/speakericon"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/data"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="275dp"
+        app:srcCompat="@drawable/speaker" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/micicon"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/round_border"
+        android:enabled="true"
+        android:text="Nextfield"
+        android:textColor="#ffffff" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/micicon"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/round_border"
+        android:enabled="false"
+        android:text="OK "
+        android:textColor="#ffffff" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="74dp"
+        android:layout_height="91dp"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="205dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="126dp"
+        android:text="TO START FILLING PRESS THE NEXT FIELD BUTTON" />
+
+</RelativeLayout>
